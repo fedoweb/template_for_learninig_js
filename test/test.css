@@ -1,0 +1,36 @@
+* {
+    font-family: sans-serif;
+}
+
+.list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 100px;
+    list-style-type: none;
+}
+
+.list__item {
+    padding: 10px;
+    color: darkgray;
+    border: 2px solid darkgray;
+    border-radius: 5px;
+}
+
+.list__item:hover {
+    color: darkorange;
+    font-weight: 800;
+    border: 3px solid darkorange;
+    cursor: pointer;
+}
+
+.text {
+    display: block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    font-size: 8px;
+    border: 2px solid darkgray;
+    border-radius: 5px;
+}

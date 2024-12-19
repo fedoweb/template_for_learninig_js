@@ -2,6 +2,12 @@
     font-family: sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 .list {
     display: flex;
     gap: 30px;
@@ -14,7 +20,7 @@
     padding: 10px;
     color: darkgray;
     border: 2px solid darkgray;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 .list__item:hover {
@@ -30,7 +36,46 @@
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
-    font-size: 8px;
+
     border: 2px solid darkgray;
     border-radius: 5px;
+}
+
+.text::placeholder {
+    color: lightgray;
+    font-size: 12px;
+}
+
+.text:hover {
+    cursor: pointer;
+    color: darkorange;
+    border: 3px solid darkorange;
+}
+
+.text:focus {
+    outline: none;
+    color: darkorange;
+    border: 3px solid darkorange;
+}
+
+.text:focus::placeholder {
+    color: rgb(255, 182, 92);
+}
+
+.select {
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+.hint {
+    color: gray;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
 }

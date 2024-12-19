@@ -7,15 +7,118 @@
     <link rel="stylesheet" href="test.css">
 </head>
 <body>
+
+    <form name="registration" class="form">
+
+        <label>
+            ФИО: 
+            <input type="text" id="fio" name="fio" required>
+        </label>
+        
+       
+
+        <label>Выберите страну проживания:</label> 
+        <select name="" id="country">
+            <option value="RUS" selected>Россия</option>
+            <option value="AZE">Азербайджан</option>
+            <option value="ARM">Армения</option>
+            <option value="BLR">Белоруссия</option>
+            <option value="KAZ">Казахстан</option>
+            <option value="KGZ">Киргизия</option>
+        </select> 
+        <button type="button" id="nextCountry">next country</button>
+
+
+        <label>
+            Выберите способ оплаты:
+        </label>
+            <select id="payMethod">
+                <option value="cardSite" selected>Картой на сайте</option> 
+                <option value="cardDelivery">Картой курьеру</option> 
+                <option value="cashDelivery">Наличными курьеру</option>
+            </select>
+        <button type="button" id="send">ОК</button>
+
+
+        <label>E-mail:</label>
+        <input type="text" id="email" minlength="5" maxlength="30" required>
+        <div class="hint hidden">Почтовый адрес должен содержать знак @</div>
+
+
+        <label for="">
+            <input type="radio" name="type" value="Личный" id="my">
+            Личный
+        </label>
+        <label for="">
+            <input type="radio" name="type" value="Семейный" id="family">
+            Семейный
+        </label>
+        <label for="">
+            <input type="radio" name="type" value="Бизнес" id="business">
+            Бизнес
+        </label>
+        <button type="button" id="nextRadio">next type</button>
+
+
+        <label for="">
+            <input type="checkbox" name="private" id="private" checked>
+            Согласен с политикой обработки персональных данных
+        </label>
+        <button type="button" id="blockCheck">block</button>
+
+        <button type="button" id="registerButton">Зарегистрироваться</button>
+
+
+        <label for="">
+            Введите число от 3 до 6:
+            <input type="number" name="number" id="number"  min="3" max="6">
+        </label>
+
+        <button>send</button>
+        <button type="reset">clear</button>
+
+
+        <label for="">
+            <div>Result:</div>
+            <output id="result"></output>
+        </label>
+    </form>
+    
     <ul class="list">
-        <li class="list__item">first</li>
+        <li class="list__item"><a href="">first</a></li>
         <li class="list__item">second</li>
         <li class="list__item">third</li>
-        <li class="list__item">fourth</li>
+        <li class="list__item"><a href="">fourth</a></li>
         <li class="list__item">fifth</li>
     </ul>
 
-    <input type="text" name="text" id="text" class="text" placeholder="введите текст">
+    <textarea name="text" id="text" class="text" placeholder="введите текст..."></textarea>
+
+    <button class="button">click me</button>
+
+    <section class="modal">
+
+        <p>
+        Это модельное окно, их несколько на странице, поэтому
+        использовать поиск родителя по классу нельзя!
+        </p>
+
+        <button>Закрыть</button> 
+    </section>
+
+    <section class="modal2"> <p>
+        Этот текст будет заменен!<br>нажми кнопку... </p>
+        <div> 
+            <div></div>
+
+            <div> 
+                <button>Заменить</button>
+            </div>
+
+            <div></div> 
+        </div>
+        </section>
+
 </body>
 <script src="test.js"></script>
 </html>
